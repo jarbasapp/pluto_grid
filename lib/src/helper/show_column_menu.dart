@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 
 abstract class PlutoColumnMenuDelegate<T> {
@@ -104,7 +104,7 @@ List<PopupMenuEntry<PlutoGridColumnMenuItem>> _getDefaultColumnMenuItems({
 }) {
   final Color textColor = stateManager.style.cellTextStyle.color!;
 
-  final Color disableTextColor = textColor.withOpacity(0.5);
+  final Color disableTextColor = textColor.withValues(alpha: 0.5);
 
   final bool enoughFrozenColumnsWidth = stateManager.enoughFrozenColumnsWidth(
     stateManager.maxWidth! - column.width,
@@ -182,7 +182,7 @@ PopupMenuItem<PlutoGridColumnMenuItem> _buildMenuItem<PlutoGridColumnMenuItem>({
     child: Text(
       text,
       style: TextStyle(
-        color: enabled ? textColor : textColor!.withOpacity(0.5),
+        color: enabled ? textColor : textColor!.withValues(alpha: 0.5),
         fontSize: 13,
       ),
     ),

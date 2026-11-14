@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 
 typedef PlutoDualOnSelectedEventCallback = void Function(
@@ -78,7 +78,7 @@ class PlutoDualGrid extends StatefulWidget {
 }
 
 class PlutoDualGridResizeNotifier extends ChangeNotifier {
-  resize() {
+  void resize() {
     notifyListeners();
   }
 }

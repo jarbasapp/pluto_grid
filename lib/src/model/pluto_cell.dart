@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 
 class PlutoCell {
@@ -102,7 +102,7 @@ class PlutoCell {
   }
 }
 
-_assertUnInitializedCell(bool flag) {
+void _assertUnInitializedCell(bool flag) {
   assert(
     flag,
     'PlutoCell is not initialized.'

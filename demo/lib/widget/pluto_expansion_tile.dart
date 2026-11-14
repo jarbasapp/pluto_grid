@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 class PlutoExpansionTile extends StatelessWidget {
   final String title;
@@ -8,12 +8,11 @@ class PlutoExpansionTile extends StatelessWidget {
   final List<Widget>? buttons;
 
   PlutoExpansionTile({
-    Key? key,
+    super.key,
     required this.title,
     this.children,
     this.buttons,
-  })  : assert(title.isNotEmpty),
-        super(key: key);
+  }) : assert(title.isNotEmpty);
 
   @override
   Widget build(BuildContext context) {

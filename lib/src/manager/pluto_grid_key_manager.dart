@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 import 'package:rxdart/rxdart.dart';
@@ -66,7 +66,8 @@ class PlutoGridKeyManager {
     final movingStream =
         _subject.stream.where((event) => event.needsThrottle).transform(
               ThrottleStreamTransformer(
-                (_) => TimerStream(_, const Duration(milliseconds: 1)),
+                (s) => TimerStream<PlutoKeyManagerEvent>(
+                    s, const Duration(milliseconds: 1)),
               ),
             );
 

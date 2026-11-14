@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 
 import '../../widget/pluto_example_button.dart';
@@ -7,7 +7,7 @@ import '../../widget/pluto_example_screen.dart';
 class ColumnHidingScreen extends StatefulWidget {
   static const routeName = 'feature/column-hiding';
 
-  const ColumnHidingScreen({Key? key}) : super(key: key);
+  const ColumnHidingScreen({super.key});
 
   @override
   _ColumnHidingScreenState createState() => _ColumnHidingScreenState();

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../helper/launch_url.dart';
@@ -12,13 +12,13 @@ class PlutoExampleScreen extends StatelessWidget {
   final Widget? body;
 
   const PlutoExampleScreen({
-    Key? key,
+    super.key,
     this.title,
     this.topTitle,
     this.topContents,
     this.topButtons,
     this.body,
-  }) : super(key: key);
+  });
 
   AlertDialog reportingDialog(BuildContext context) {
     return AlertDialog(

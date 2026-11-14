@@ -1,5 +1,5 @@
 import 'package:demo/dummy_data/development.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 
 import '../../widget/pluto_example_button.dart';
@@ -8,7 +8,7 @@ import '../../widget/pluto_example_screen.dart';
 class ColumnMenuScreen extends StatefulWidget {
   static const routeName = 'feature/column-menu';
 
-  const ColumnMenuScreen({Key? key}) : super(key: key);
+  const ColumnMenuScreen({super.key});
 
   @override
   _ColumnMenuScreenState createState() => _ColumnMenuScreenState();

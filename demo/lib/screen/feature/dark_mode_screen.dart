@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 
 import '../../dummy_data/development.dart';
@@ -8,7 +8,7 @@ import '../../widget/pluto_example_screen.dart';
 class DarkModeScreen extends StatefulWidget {
   static const routeName = 'feature/dark-mode';
 
-  const DarkModeScreen({Key? key}) : super(key: key);
+  const DarkModeScreen({super.key});
 
   @override
   _DarkModeScreenState createState() => _DarkModeScreenState();

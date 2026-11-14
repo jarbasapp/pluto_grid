@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 
 import '../../dummy_data/development.dart';
@@ -8,7 +8,7 @@ import '../../widget/pluto_example_screen.dart';
 class MovingScreen extends StatefulWidget {
   static const routeName = 'feature/moving';
 
-  const MovingScreen({Key? key}) : super(key: key);
+  const MovingScreen({super.key});
 
   @override
   _MovingScreenState createState() => _MovingScreenState();

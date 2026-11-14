@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 
 import '../../dummy_data/development.dart';
@@ -8,7 +8,7 @@ import '../../widget/pluto_example_screen.dart';
 class CurrencyTypeColumnScreen extends StatefulWidget {
   static const routeName = 'feature/currency-type-column';
 
-  const CurrencyTypeColumnScreen({Key? key}) : super(key: key);
+  const CurrencyTypeColumnScreen({super.key});
 
   @override
   _CurrencyTypeColumnScreenState createState() =>

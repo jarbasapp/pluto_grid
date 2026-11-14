@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 
 import '../dummy_data/development.dart';
@@ -6,7 +6,7 @@ import '../dummy_data/development.dart';
 class EmptyScreen extends StatefulWidget {
   static const routeName = 'empty';
 
-  const EmptyScreen({Key? key}) : super(key: key);
+  const EmptyScreen({super.key});
 
   @override
   _EmptyScreenState createState() => _EmptyScreenState();

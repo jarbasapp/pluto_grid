@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../constants/pluto_grid_example_colors.dart';
 
@@ -14,37 +14,34 @@ class PlutoListTile extends StatelessWidget {
   final Widget? trailing;
 
   const PlutoListTile({
-    Key? key,
+    super.key,
     required this.title,
     this.description,
     this.onTapPreview,
     this.onTapLiveDemo,
     this.trailing,
   })  : _color = Colors.white,
-        _fontColor = PlutoGridExampleColors.fontColor,
-        super(key: key);
+        _fontColor = PlutoGridExampleColors.fontColor;
 
   const PlutoListTile.dark({
-    Key? key,
+    super.key,
     required this.title,
     this.description,
     this.onTapPreview,
     this.onTapLiveDemo,
     this.trailing,
   })  : _color = Colors.black87,
-        _fontColor = Colors.white70,
-        super(key: key);
+        _fontColor = Colors.white70;
 
   const PlutoListTile.amber({
-    Key? key,
+    super.key,
     required this.title,
     this.description,
     this.onTapPreview,
     this.onTapLiveDemo,
     this.trailing,
   })  : _color = Colors.amber,
-        _fontColor = Colors.black87,
-        super(key: key);
+        _fontColor = Colors.black87;
 
   final Color _color;
   final Color _fontColor;

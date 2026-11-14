@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 
 import '../../widget/pluto_example_button.dart';
@@ -7,7 +7,7 @@ import '../../widget/pluto_example_screen.dart';
 class ColumnSortingScreen extends StatefulWidget {
   static const routeName = 'feature/column-sorting';
 
-  const ColumnSortingScreen({Key? key}) : super(key: key);
+  const ColumnSortingScreen({super.key});
 
   @override
   _ColumnSortingScreenState createState() => _ColumnSortingScreenState();

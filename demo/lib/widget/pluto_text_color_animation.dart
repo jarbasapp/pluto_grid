@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:rainbow_color/rainbow_color.dart';
 
 class PlutoTextColorAnimation extends StatefulWidget {
@@ -7,11 +7,11 @@ class PlutoTextColorAnimation extends StatefulWidget {
   final FontWeight? fontWeight;
 
   const PlutoTextColorAnimation({
-    Key? key,
+    super.key,
     this.text,
     this.fontSize,
     this.fontWeight,
-  }) : super(key: key);
+  });
 
   @override
   _PlutoTextColorAnimationState createState() =>

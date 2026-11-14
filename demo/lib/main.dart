@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import 'constants/pluto_grid_example_colors.dart';
 import 'screen/development_screen.dart';
@@ -48,7 +48,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -119,7 +119,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: PlutoGridExampleColors.backgroundColor,
         colorScheme: const ColorScheme.light(
           primary: PlutoGridExampleColors.primaryColor,
-          background: PlutoGridExampleColors.backgroundColor,
+          surface: PlutoGridExampleColors.backgroundColor,
         ),
       ),
     );

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 
 import '../../widget/pluto_example_button.dart';
@@ -7,7 +7,7 @@ import '../../widget/pluto_example_screen.dart';
 class TimeTypeColumnScreen extends StatefulWidget {
   static const routeName = 'feature/time-type-column';
 
-  const TimeTypeColumnScreen({Key? key}) : super(key: key);
+  const TimeTypeColumnScreen({super.key});
 
   @override
   _TimeTypeColumnScreenState createState() => _TimeTypeColumnScreenState();

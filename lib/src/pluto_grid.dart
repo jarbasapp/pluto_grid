@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'dart:ui';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart' show Intl;
 import 'package:pluto_grid/pluto_grid.dart';
@@ -337,7 +337,7 @@ class PlutoGrid extends PlutoStatefulWidget {
   /// initializeDateFormatting();
   /// ```
   /// {@endtemplate}
-  static setDefaultLocale(String locale) {
+  static void setDefaultLocale(String locale) {
     Intl.defaultLocale = locale;
   }
 
@@ -345,7 +345,7 @@ class PlutoGrid extends PlutoStatefulWidget {
   /// when you need to set date format when changing locale.
   ///
   /// {@macro intl_default_locale}
-  static initializeDateFormat() {
+  static void initializeDateFormat() {
     initializeDateFormatting();
   }
 
